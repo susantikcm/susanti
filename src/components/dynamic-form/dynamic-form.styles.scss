@@ -1,0 +1,29 @@
+@mixin shrinkLabel {
+    top: -24px;
+    font-size: 12px;
+  }
+  
+  .dynamic-form {
+    display: flex;
+    flex-direction: column;
+    
+    .buttons {
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+@media (min-width: 767px)  {
+    .dynamic-form {
+        width: 30vw;
+    }
+}
+
+.form-input {
+    background: none;
+    background-color: white;
+    font-size: 18px;
+    padding: 10px 10px 10px 5px;
+    display: block;
+    width: 100%;
+}
