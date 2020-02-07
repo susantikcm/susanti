@@ -1,29 +1,50 @@
-@mixin shrinkLabel {
-    top: -24px;
-    font-size: 12px;
-  }
-  
-  .dynamic-form {
+.dynamic-form {
     display: flex;
     flex-direction: column;
     
     .buttons {
-        display: flex;
-        justify-content: space-between;
+        position: absolute;
+        bottom: 50px;
+        
+        background: none;
+        background-color: white;
+        font-size: 18px;
+        padding: 10px 10px 10px 5px;
+        display: block;
+        width: 100px;
+        margin: 25px 0;
+    }
+
+    .select-gender {
+        background: none;
+        background-color: white;
+        font-size: 18px;
+        padding: 10px 10px 10px 5px;
+        display: block;
+        width: 320px;
+    }
+
+    .select-contact-type {
+        background: none;
+        background-color: white;
+        font-size: 18px;
+        padding: 10px 10px 10px 5px;
+        display: block;
+        width: 100px;
+    }
+
+    .select-contact-no {
+        background: none;
+        background-color: white;
+        font-size: 18px;
+        padding: 10px 10px 10px 5px;
+        display: block;
+        width: 205px;
     }
 }
 
 @media (min-width: 767px)  {
     .dynamic-form {
-        width: 30vw;
+        width: 50vw;
     }
-}
-
-.form-input {
-    background: none;
-    background-color: white;
-    font-size: 18px;
-    padding: 10px 10px 10px 5px;
-    display: block;
-    width: 100%;
 }

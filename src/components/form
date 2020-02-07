@@ -79,7 +79,6 @@ class DynamicForm extends Component {
         return(
             <div className="dynamic-form mx-auto">
             <h1>Dynamic Form</h1>
-
                 <form onSubmit={this.handleSubmit}>
                     <h2>Registration</h2>
                     <FormInput
