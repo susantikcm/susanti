@@ -1,4 +1,4 @@
-export const DYNAMIC_PAGE = '/';
+export const DYNAMIC_PAGE = '/dynamic-page';
 export const SIGN_IN = '/signin';
 export const SIGN_UP = '/signup';
 export const MAILING_LIST = '/mailing-list';

@@ -63,14 +63,21 @@ class DynamicForm extends Component {
  
     }
 
-    renderForm() {
-        // return this.props.packages.map(
-        //     function (p, i) {
-        //         return (
-        //             <Package my_package={p} key={'package'+i} />
-        //         );
-        //     }
-        // )
+    renderDynamicForm() {
+        return this.props.formFields.map((field, index)  => (
+            <div key={index}>
+                <label key={'1'+index} htmlFor={field.name}>{field.label}</label>
+            </div>
+            // <FormInput
+            //     key={'1'+index}
+            //     name={field.name}
+            //     type={field.type ? field.type : 'text'} 
+            //     value={this.state.firstName} 
+            //     handleChange={this.handleChange}
+            //     label={field.label}
+            //     required
+            // />
+        ))
     }
 
     render() {
@@ -78,10 +85,9 @@ class DynamicForm extends Component {
 
         return(
             <div className="dynamic-form mx-auto">
-            <h1>Dynamic Form</h1>
+            <h4>Dynamic Form</h4>
 
                 <form onSubmit={this.handleSubmit}>
-                    <h2>Registration</h2>
                     <FormInput
                         name="firstName"
                         type="text" 

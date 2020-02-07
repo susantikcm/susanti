@@ -9,7 +9,7 @@ class Routes extends Component {
     render() {
         return (
             <Switch>
-                <Route exact path={process.env.PUBLIC_URL + ROUTES.DYNAMIC_PAGE} component={DynamicPage} />
+                <Route path={process.env.PUBLIC_URL + ROUTES.DYNAMIC_PAGE} component={DynamicPage} />
             </Switch>
         );
     }

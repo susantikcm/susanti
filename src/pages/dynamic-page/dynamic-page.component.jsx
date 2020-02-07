@@ -34,13 +34,15 @@ class DynamicPage extends React.Component {
     render() {
     
         const { form_data } = this.state;  
-        const titleProps = this.props.location.titleProps;
-        console.log(titleProps);
+        const { param } = this.props.location;
+
+        console.log(param);
         return (
             <div className='dynamic-page'>
-                <h1>My Dynamic Page</h1>
+                <h1 style={{marginTop:'60px'}}>Dynamic {param} Page</h1>
+
                 <DynamicForm 
-                    formTitle = {titleProps}
+                    formTitle = {param}
                     formFields = {form_data.formFields}
                     handleSubmit = {(formFields => {this.onSubmit(formFields)} )}
                 />

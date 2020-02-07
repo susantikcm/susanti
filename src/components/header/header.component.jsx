@@ -16,12 +16,12 @@ const Header = () => (
         <Nav className="mr-auto">
             <Link className="nav-link" to={process.env.PUBLIC_URL + ROUTES.DYNAMIC_PAGE}>Home</Link>
             <NavDropdown title="Contact Us" id="collasible-nav-dropdown">
-                <Link className="nav-link" to={{pathname:process.env.PUBLIC_URL + ROUTES.DYNAMIC_PAGE, titleProps:{title:'Feedback'}}} style={{color:'black'}}>Home Feedback</Link>
+                <Link className="nav-link" to={{pathname:process.env.PUBLIC_URL + ROUTES.DYNAMIC_PAGE, param:'Feedback'}} style={{color:'black'}}>Home Feedback</Link>
             </NavDropdown>
         </Nav>
             <Nav>
-                <Link className="nav-link" to={{pathname:process.env.PUBLIC_URL + ROUTES.DYNAMIC_PAGE, titleProps:{title:'Subscriptions'}}}>Subscriptions</Link>
-                <Link className="nav-link" to={{pathname:process.env.PUBLIC_URL + ROUTES.DYNAMIC_PAGE, titleProps:{title:'Sign Up'}}}>Sign Up</Link>
+                <Link className="nav-link" to={{pathname:process.env.PUBLIC_URL + ROUTES.DYNAMIC_PAGE, param: 'Subscriptions'}}>Subscriptions</Link>
+                <Link className="nav-link" to={{pathname:process.env.PUBLIC_URL + ROUTES.DYNAMIC_PAGE, param:'Sign Up'}}>Sign Up</Link>
             </Nav>
     </Navbar.Collapse>
     </Navbar>
