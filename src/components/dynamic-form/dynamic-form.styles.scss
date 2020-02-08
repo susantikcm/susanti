@@ -1,50 +1,11 @@
 .dynamic-form {
     display: flex;
-    flex-direction: column;
-    
-    .buttons {
-        position: absolute;
-        bottom: 50px;
-        
-        background: none;
-        background-color: white;
-        font-size: 18px;
-        padding: 10px 10px 10px 5px;
-        display: block;
-        width: 100px;
-        margin: 25px 0;
-    }
-
-    .select-gender {
-        background: none;
-        background-color: white;
-        font-size: 18px;
-        padding: 10px 10px 10px 5px;
-        display: block;
-        width: 320px;
-    }
-
-    .select-contact-type {
-        background: none;
-        background-color: white;
-        font-size: 18px;
-        padding: 10px 10px 10px 5px;
-        display: block;
-        width: 100px;
-    }
-
-    .select-contact-no {
-        background: none;
-        background-color: white;
-        font-size: 18px;
-        padding: 10px 10px 10px 5px;
-        display: block;
-        width: 205px;
-    }
+    flex-direction: column; 
+    align-items: flex-start;
 }
 
 @media (min-width: 767px)  {
     .dynamic-form {
-        width: 50vw;
+        width: 30vw;
     }
 }

@@ -1,8 +1,8 @@
-export const DYNAMIC_PAGE = '/dynamic-page';
+export const HOME = '/';
 export const SIGN_IN = '/signin';
 export const SIGN_UP = '/signup';
-export const MAILING_LIST = '/mailing-list';
 
+export const SUBSCRIPTIONS = '/Subcriptions';
 export const FEEDBACK = '/feedback';
 
 export const ABOUT = '/about';

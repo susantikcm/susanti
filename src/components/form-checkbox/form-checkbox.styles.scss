@@ -1,34 +1,43 @@
-$gray-500: #aaa !default;
+//Hide checkboxes
+input[type="checkbox"] {
+  position: absolute;
+  opacity: 0;
+  z-index: -1;
+  margin: 0px;
+}
 
-.form-checkbox {
-    position: relative;
-    appearance: none;
-    cursor: pointer;
-    margin: 0px 25px 0px 0px;
+//Style checkbox label
+input[type="checkbox"] + span {
+  font: 16pt;
+  color: #000;
+}
 
-    &:before {
-      content: "";
-      position: absolute;
-      left: 0;
-      top: -0.9em;
-      display: inline-block;
-      width: 20px;
-      height: 22px;
-      border: 1px solid;
-    }
-  
-    &:checked:after {
-      content: '\2713';
-      position: absolute;
-      left: 0.18em;
-      top: -0.4em;
-      font-size: 1.2rem;
-      line-height: 0.5;
-    }
-  
-    &:disabled {
-      &:before {
-        border: 1px solid $gray-500;
-      }
-    }
-  }
+//Add checkbox skin
+input[type="checkbox"] + span:before {
+  font: 16pt FontAwesome;
+  content: '\00f096';
+  display: inline-block;
+  width: 16pt;
+  padding: 2px 0 0 3px;
+  margin-right: 0.5em;
+}
+
+//Add checkbox checked skin
+input[type="checkbox"]:checked + span:before {
+  content: '\00f046';
+}
+
+//Add focus outline
+input[type="checkbox"]:focus + span:before {
+  outline: 1px dotted #aaa;
+}
+
+//Set gray color for disabled checkbox
+input[type="checkbox"]:disabled + span {
+  color: #999;
+}
+
+//Set hover shadow on non-disabled checkbox
+input[type="checkbox"]:not(:disabled) + span:hover:before {
+  text-shadow: 0 1px 2px #77F;
+}

@@ -1,11 +1,11 @@
 @mixin shrinkLabel {
     top: -24px;
-    font-size: 12px;
+    font-size: 16px;
   }
   
   .group {
     position: relative;
-    margin: 45px 0;
+    margin: 25px 0;
 
     .form-input {
       background: none;
@@ -14,7 +14,7 @@
       padding: 10px 10px 10px 5px;
       display: block;
       width: 300px;
-      margin: 25px 0;
+      margin: 5px 0;
 
       &:focus {
         outline: none;
